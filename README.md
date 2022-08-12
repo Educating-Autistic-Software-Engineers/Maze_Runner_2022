@@ -1,4 +1,27 @@
 # Maze_Runner_2022
-EdASE 2022 Team 3 Game
+EdASE Summer 2022 Team 3 Game
 
-This game was made with the efforts of three campers - Camper_1, Camper_2, Camper_2, A Clemson University professor, and a Clemson University graduate student
+This game was made with the efforts of three campers - Camper_1, Camper_2, Camper_3, A Clemson University professor, and a Clemson University graduate student. 
+
+## Maze Runner Idea
+The goal of the game is to get the player chatacter, a man lost in the jungle from the start to the exit of a maze, all while platforming around the maze and avoiding piranhas. Get to saftey without falling or meeting your demise to a hungry carnivorous fish!
+
+## Maze Runner Assets
+This game is compiled from free to use assets and assets made by Camper_3. 
+
+Assets used with attribution:
+* 
+
+Assets made by Camper_3:
+* 
+
+## Maze Runner Music and Sound Effects
+* Title Music - Camper_3, using BeepBox.co
+* Level Music - Camper_1, using BeepBox.co
+* Sound Effects - Camper_1, recorded using cellphone + items from the real world
+    * Death sound 1
+    * Death sound 2
+    * Falling sound
+    * Walking on grass
+    * Walking on wood
+    * Flowing water
