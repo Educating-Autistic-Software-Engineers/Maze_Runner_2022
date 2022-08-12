@@ -3,6 +3,11 @@ EdASE Summer 2022 Team 3 Game
 
 This game was made with the efforts of three campers - Camper_1, Camper_2, Camper_3, a Clemson University professor, and a Clemson University graduate student. 
 
+## Tools
+* Godot Game Engine, version 3.4.4 - https://godotengine.org/
+* Piskel App - https://www.piskelapp.com/
+* BeepBox.co - https://www.beepbox.co/
+
 ## Maze Runner Idea
 The goal of the game is to get the player chatacter, a man lost in the jungle from the start to the exit of a maze, all while platforming around the maze and avoiding piranhas. Get to saftey without falling or meeting your demise to a hungry carnivorous fish!
 
@@ -39,3 +44,11 @@ Assets made using Piskel (https://www.piskelapp.com/) by Camper_3:
     * Wrote introductory text
 
 Additionally, due to time constraints, a team facilitator assembled each of the campers efforts into a cohesive game, created the graphic for Camper_3's introduction to the game, and added jumping mechanics. 
+
+## Playing the Game
+1. Download and extract this repository
+2. In Godot Project Mangager select *Import* and navigate to the "project.godot" file
+3. Select Import & Edit
+4. Run the game by pressing the play icon at the top right or by hitting F5
+
+Use WSAD to move the character around. Use space to jump. Good Luck!
