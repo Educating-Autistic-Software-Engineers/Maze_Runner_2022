@@ -1,0 +1,142 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://theme-2-song_Gl6n99Di.wav" type="AudioStream" id=1]
+[ext_resource path="res://startScreenBackground.png" type="Texture" id=3]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends MarginContainer
+
+const first_scene = preload(\"res://Maze.tscn\")
+
+onready var selector_one = $CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer/Selector
+onready var selector_two = $CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer/Selector
+
+var current_selection = 0
+
+func _ready():
+	set_current_selection(0)
+
+func _input(event):
+	get_tree().
+
+func _process(_delta):
+	if Input.is_key_pressed()
+	if Input.is_action_just_pressed(\"ui_down\") and current_selection < 1:
+		current_selection += 1
+		set_current_selection(current_selection)
+	elif Input.is_action_just_pressed(\"ui_up\") and current_selection > 0:
+		current_selection -= 1
+		set_current_selection(current_selection)
+	elif Input.is_action_just_pressed(\"ui_accept\"):
+		handle_selection(current_selection)
+		
+func handle_selection(_current_selection):
+	if _current_selection == 0:
+		get_parent().add_child(first_scene.instance())
+		queue_free()
+	elif _current_selection == 1:
+		get_tree().quit()
+
+func set_current_selection(_current_selection):
+	selector_one.text = \"\"
+	selector_two.text = \"\"
+	if _current_selection == 0:
+		selector_one.text = \">\"
+	elif _current_selection == 1:
+		selector_two.text = \">\"
+"
+
+[node name="MainMenu" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 1024.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 7
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 1024.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 470.0
+margin_top = 487.0
+margin_right = 553.0
+margin_bottom = 537.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_right = 83.0
+margin_bottom = 14.0
+
+[node name="MazeRunner Title" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
+margin_right = 83.0
+margin_bottom = 14.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Maze Runner"
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 83.0
+margin_bottom = 50.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2"]
+margin_left = 11.0
+margin_right = 72.0
+margin_bottom = 32.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_right = 61.0
+margin_bottom = 14.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer"]
+margin_right = 61.0
+margin_bottom = 14.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_right = 8.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 7, 0 )
+text = ">"
+
+[node name="StartButton" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_left = 12.0
+margin_right = 61.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 49, 0 )
+text = "Start"
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_top = 18.0
+margin_right = 61.0
+margin_bottom = 32.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2"]
+margin_right = 61.0
+margin_bottom = 14.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
+margin_right = 8.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 8, 0 )
+text = ">"
+
+[node name="QuitButton" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
+margin_left = 12.0
+margin_right = 61.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 49, 0 )
+text = "Quit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[connection signal="ready" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_ready"]

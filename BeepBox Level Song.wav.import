@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BeepBox Level Song.wav-f37f573cb8be19f380346427121c5020.sample"
+
+[deps]
+
+source_file="res://BeepBox Level Song.wav"
+dest_files=[ "res://.import/BeepBox Level Song.wav-f37f573cb8be19f380346427121c5020.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
