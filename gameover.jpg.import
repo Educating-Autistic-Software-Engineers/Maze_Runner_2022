@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/gameover.jpg-892c4f33dc709c1f32c8cbf322411db9.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://__MACOSX/._pirahna_texture.png"
+source_file="res://gameover.jpg"
+dest_files=[ "res://.import/gameover.jpg-892c4f33dc709c1f32c8cbf322411db9.stex" ]
+
 [params]
 
 compress/mode=0
