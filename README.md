@@ -10,10 +10,11 @@ The goal of the game is to get the player chatacter, a man lost in the jungle fr
 This game is compiled from free to use assets and assets made by Camper_3. 
 
 Assets used with attribution:
-* 
+* Platforms and Water - Tio Aimar's Jungle Platformer pack from OpenGameArt.org (https://opengameart.org/content/2d-platformer-jungle-pack)
 
-Assets made by Camper_3:
-* 
+Assets made using Piskel (https://www.piskelapp.com/) by Camper_3:
+* Main character
+* Piranha
 
 ## Maze Runner Music and Sound Effects
 * Title Music - Camper_3, using BeepBox.co
@@ -25,3 +26,16 @@ Assets made by Camper_3:
     * Walking on grass
     * Walking on wood
     * Flowing water
+
+## Distribution of Work
+* Camper_1
+    * Designed maze using asset pack from Tio Aimar 
+    * Coded collision with maze platforms
+* Camper_2
+    * Designed and programmed the opening title screen to start game or quit 
+* Camper_3
+    * Designed and animated main character
+    * Designed and animated piranhas
+    * Wrote introductory text
+
+Additionally, due to time constraints, a team facilitator assembled each of the campers efforts into a cohesive game, created the graphic for Camper_3's introduction to the game, and added jumping mechanics. 
