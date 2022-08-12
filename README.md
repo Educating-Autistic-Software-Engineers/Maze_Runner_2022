@@ -1,7 +1,7 @@
 # Maze_Runner_2022
 EdASE Summer 2022 Team 3 Game
 
-This game was made with the efforts of three campers - Camper_1, Camper_2, Camper_3, A Clemson University professor, and a Clemson University graduate student. 
+This game was made with the efforts of three campers - Camper_1, Camper_2, Camper_3, a Clemson University professor, and a Clemson University graduate student. 
 
 ## Maze Runner Idea
 The goal of the game is to get the player chatacter, a man lost in the jungle from the start to the exit of a maze, all while platforming around the maze and avoiding piranhas. Get to saftey without falling or meeting your demise to a hungry carnivorous fish!
